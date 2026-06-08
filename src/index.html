@@ -1,0 +1,341 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Intro section with dropdown navigation</title>
+    <link rel="stylesheet" href="output.css" />
+  </head>
+  <body class="relative">
+    <div class="py-6 bg-[#fafafa] md:pt-8 lg:pb-2">
+      <header class="mb-6 mx-3.5 sm:mx-4.5 md:mx-6 lg:mx-8 md:flex">
+        <!-- Snap logo and menu icon -->
+        <div class="flex justify-between">
+          <div>
+            <img src="images/logo.svg" alt="snap logo" />
+          </div>
+          <div class="cursor-pointer menu-icon md:hidden">
+            <img src="images/icon-menu.svg" alt="menu icon" />
+          </div>
+        </div>
+
+        <div
+          class="hidden md:flex md:justify-between md:ml-8 md:-mt-1.5 w-full lg:ml-11"
+        >
+          <div class="flex">
+            <!-- features -->
+            <div
+              class="flex place-items-baseline cursor-pointer features-container-1"
+            >
+              <p
+                class="text-[1.02rem] lg:text-[clamp(1rem,1.5vw,1.24rem)] text-[#696969] font-semibold hover:text-black"
+              >
+                Features
+              </p>
+              <span class="ml-1.5">
+                <img
+                  src="images/icon-arrow-down.svg"
+                  alt=""
+                  class="features-arrow-down-1"
+                />
+                <img
+                  src="images/icon-arrow-up.svg"
+                  alt=""
+                  class="hidden features-arrow-up-1"
+                />
+              </span>
+            </div>
+
+            <!-- company -->
+            <div
+              class="company-container-1 flex place-items-baseline ml-5.5 cursor-pointer lg:ml-9"
+            >
+              <p
+                class="text-[1.02rem] lg:text-[clamp(1rem,1.5vw,1.24rem)] text-[#696969] font-semibold hover:text-black"
+              >
+                Company
+              </p>
+              <span class="ml-1.5">
+                <img
+                  src="images/icon-arrow-down.svg"
+                  alt=""
+                  class="company-arrow-down-1"
+                />
+                <img
+                  src="images/icon-arrow-up.svg"
+                  alt=""
+                  class="hidden company-arrow-up-1"
+                />
+              </span>
+            </div>
+
+            <!-- Careers -->
+            <div
+              class="text-[1.02rem] lg:text-[clamp(1rem,1.5vw,1.24rem)] text-[#696969] font-semibold ml-5.5 cursor-pointer hover:text-black lg:ml-9"
+            >
+              Careers
+            </div>
+
+            <!-- About -->
+            <div
+              class="text-[1.02rem] lg:text-[clamp(1rem,1.5vw,1.24rem)] text-[#696969] font-semibold ml-5.5 cursor-pointer hover:text-black lg:ml-9"
+            >
+              About
+            </div>
+          </div>
+          <div class="flex">
+            <div
+              class="text-[1rem] lg:text-[clamp(1rem,1.5vw,1.24rem)] text-[#696969] font-semibold mr-6 cursor-pointer hover:text-black lg:mr-9"
+            >
+              Login
+            </div>
+            <div
+              class="text-[1rem] lg:text-[clamp(1rem,1.5vw,1.24rem)] text-[#696969] font-semibold border-2 border-[#696969] rounded-[0.65rem] px-5 py-[0.35rem] -mt-1.5 cursor-pointer hover:text-black hover:border-black"
+            >
+              Register
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <main
+        class="flex flex-col-reverse md:flex-row md:mt-20 md:justify-center md:w-[80vw] md:mx-auto"
+      >
+        <section class="mt-7 md:mt-0 lg:mt-2 xl:mr-24">
+          <div
+            class="text-[9.7vw] leading-none font-bold text-center md:text-[5.6vw] md:text-left md:w-[34vw] md:mt-[4.4rem] lg:mt-[5.7rem] text-wrap"
+          >
+            Make remote work
+          </div>
+          <div
+            class="text-[#696969] text-[clamp(1.1rem,1.8vw,1.5rem)] w-[89vw] font-medium mt-6 text-center mx-auto md:mx-0 md:text-left md:w-[41vw] lg:w-[32vw] md:mt-[3.1rem] lg:mt-[4.1rem] md:text-[clamp(1rem,1.8vw,1.5rem)] lg:text-[clamp(1rem,1.5vw,1.24rem)]"
+          >
+            Get your team in sync, no matter your location. Streamline
+            processes, create team rituals, and watch productivity soar.
+          </div>
+          <div
+            class="mt-7 bg-black text-[#fafafa] text-center py-[0.95rem] text-[1.24rem] font-semibold border rounded-[1.1rem] w-[37%] mx-auto md:mx-0 md:mt-[3.1rem] cursor-pointer hover:bg-[#fafafa] hover:border-2 hover:border-black hover:text-black"
+          >
+            Learn more
+          </div>
+
+          <div
+            class="flex mt-12 items-center justify-evenly md:mt-[5.7rem] lg:mt-[5.4rem] md:justify-start"
+          >
+            <span class="">
+              <img
+                src="images/client-databiz.svg"
+                alt="databiz image"
+                class="w-[18vw] md:w-[14vw] lg:w-[9vw]"
+              />
+            </span>
+            <span class="md:ml-6 lg:ml-9">
+              <img
+                src="images/client-audiophile.svg"
+                alt="audiophile imiage"
+                class="w-[14vw] md:w-[10vw] lg:w-[5vw]"
+              />
+            </span>
+            <span class="md:ml-6 lg:ml-9">
+              <img
+                src="images/client-meet.svg"
+                alt="meet image"
+                class="w-[18vw] md:w-[12vw] lg:w-[8vw]"
+              />
+            </span>
+            <span class="md:ml-6 lg:ml-9">
+              <img
+                src="images/client-maker.svg"
+                alt="maker image"
+                class="w-[18vw] md:w-[12vw] lg:w-[8vw]"
+              />
+            </span>
+          </div>
+        </section>
+
+        <section class="md:ml-6 lg:ml-12 xl:ml-6">
+          <div class="hidden md:flex md:w-[45vw] lg:w-[39vw] xl:w-[35vw]">
+            <img
+              src="images/image-hero-desktop.png"
+              alt="hero image"
+              class=""
+            />
+          </div>
+          <div class="md:hidden w-full">
+            <img src="images/image-hero-mobile.png" alt="hero image" />
+          </div>
+        </section>
+      </main>
+
+      <!-- features drop down large screen view -->
+      <div
+        class="features-menu-1 hidden md:hidden bg-white absolute top-17 rounded-[0.65rem] left-14 lg:left-20 p-5 lg:p-6 shadow-2xl"
+      >
+        <span class="flex mt-0 items-center">
+          <img src="images/icon-todo.svg" alt="" />
+          <p
+            class="text-[1rem] lg:text-[clamp(1rem,1.5vw,1.24rem)] text-[#696969] ml-4 font-semibold"
+          >
+            Todo List
+          </p>
+        </span>
+        <span class="flex mt-2.5 items-center">
+          <img src="images/icon-calendar.svg" alt="" />
+          <p
+            class="text-[1rem] lg:text-[clamp(1rem,1.5vw,1.24rem)] text-[#696969] ml-4 font-semibold"
+          >
+            Calendar
+          </p>
+        </span>
+        <span class="flex mt-2.5 items-center">
+          <img src="images/icon-reminders.svg" alt="" />
+          <p
+            class="text-[1rem] lg:text-[clamp(1rem,1.5vw,1.24rem)] text-[#696969] ml-4 font-semibold"
+          >
+            Reminders
+          </p>
+        </span>
+        <span class="flex mt-2.5 items-center">
+          <img src="images/icon-planning.svg" alt="" />
+          <p
+            class="text-[1rem] lg:text-[clamp(1rem,1.5vw,1.24rem)] text-[#696969] ml-4 font-semibold"
+          >
+            Planning
+          </p>
+        </span>
+      </div>
+
+      <!-- company drop down large screen view -->
+      <div
+        class="hidden md:hidden flex-col px-5 lg:px-6 py-4 absolute bg-white top-17 rounded-[0.65rem] left-55 lg:left-74 shadow-2xl company-menu-1"
+      >
+        <span class="mt-1 text-[1rem] text-[#696969] font-semibold"
+          >History</span
+        >
+        <span class="mt-2 text-[1rem] text-[#696969] font-semibold"
+          >Our Team</span
+        >
+        <span class="mt-2 text-[1rem] text-[#696969] font-semibold">Blog</span>
+      </div>
+
+      <footer class="attribution text-[0.6875rem] text-center mt-[3.2rem]">
+        Challenge by
+        <a
+          class="text-[#3e52a3]"
+          href="https://www.frontendmentor.io?ref=challenge"
+          >Frontend Mentor</a
+        >. Coded by <a class="text-[#3e52a3]" href="#">Shoga Oluwaseye</a>.
+      </footer>
+    </div>
+
+    <!-- Mobile menu drop down -->
+    <div
+      class="absolute w-full bg-black/70 z-50 top-0 h-full hidden md:hidden drop-down-menu"
+    >
+      <div class="absolute right-0 bg-white h-full w-[64%] pt-6 px-5">
+        <div class="flex justify-end close-icon cursor-pointer">
+          <img src="images/icon-close-menu.svg" alt="close menu icon" />
+        </div>
+        <div>
+          <!-- Features -->
+          <div class="">
+            <div
+              class="flex items-baseline mt-5 features-container cursor-pointer"
+            >
+              <p class="text-[1.12rem] text-[#696969]">Features</p>
+              <span class="ml-3">
+                <img
+                  src="images/icon-arrow-down.svg"
+                  alt="arrow down"
+                  class="features-arrow-down"
+                />
+                <img
+                  src="images/icon-arrow-up.svg"
+                  alt="arrow up"
+                  class="hidden features-arrow-up"
+                />
+              </span>
+            </div>
+            <!-- features drop menu -->
+            <div class="pl-6 hidden features-menu">
+              <span class="flex mt-5 items-center">
+                <img src="images/icon-todo.svg" alt="" />
+                <p class="text-[1.12rem] text-[#696969] ml-3">Todo List</p>
+              </span>
+              <span class="flex mt-4 items-center">
+                <img src="images/icon-calendar.svg" alt="" />
+                <p class="text-[1.12rem] text-[#696969] ml-3">Calendar</p>
+              </span>
+              <span class="flex mt-4 items-center">
+                <img src="images/icon-reminders.svg" alt="" />
+                <p class="text-[1.12rem] text-[#696969] ml-3">Reminders</p>
+              </span>
+              <span class="flex mt-4 items-center">
+                <img src="images/icon-planning.svg" alt="" />
+                <p class="text-[1.12rem] text-[#696969] ml-3">Planning</p>
+              </span>
+            </div>
+          </div>
+          <!-- Company -->
+          <div>
+            <div
+              class="flex items-baseline mt-3 company-container cursor-pointer"
+            >
+              <p class="text-[1.12rem] text-[#696969]">Company</p>
+              <span class="ml-3">
+                <img
+                  src="images/icon-arrow-down.svg"
+                  alt="arrow down"
+                  class="company-arrow-down"
+                />
+                <img
+                  src="images/icon-arrow-up.svg"
+                  alt="arrow up"
+                  class="hidden company-arrow-up"
+                />
+              </span>
+            </div>
+            <div class="flex-col pl-6 hidden company-menu">
+              <span class="mt-4 text-[1.12rem] text-[#696969]">History</span>
+              <span class="mt-4 text-[1.12rem] text-[#696969]">Our Team</span>
+              <span class="mt-4 text-[1.12rem] text-[#696969] mb-3">Blog</span>
+            </div>
+          </div>
+          <div
+            class="careers-btn text-[1.12rem] text-[#696969] mt-3 cursor-pointer"
+          >
+            Careers
+          </div>
+          <div
+            class="about-btn text-[1.12rem] text-[#696969] mt-3 cursor-pointer"
+          >
+            About
+          </div>
+        </div>
+        <div class="mt-8">
+          <div
+            class="login-btn text-center text-[#696969] text-[1rem] cursor-pointer"
+          >
+            Login
+          </div>
+          <div
+            class="register-btn text-center text-[#696969] mt-4 text-[1rem] border-[0.12rem] border-[#696969] py-2 rounded-[1.1rem] cursor-pointer"
+          >
+            Register
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
